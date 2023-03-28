@@ -1,0 +1,8 @@
+<h1>Hello world</h1>
+<p>rooms works:  {{ hotelName}}</p>
+<div [hidden]="hideRooms">
+ number of Rooms: 
+<div [innerText]="numberofRooms"></div>
+</div>
+<div *ngIf="let rooms of Rooms>0">Rooms List</div>
+<button (click)="toggle()">Toggle</button>
